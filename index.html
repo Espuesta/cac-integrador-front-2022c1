@@ -103,18 +103,21 @@
 </section>
 
 <form>
-    <div class="container">
+    <div class="container-fluid">
         <h5>Conviertete en</h5>
         <H1>ORADOR</H1>
         <h6>Anítate para dar una <span>charla ignite</span>. cuéntanos de qué quieres hablar</h6>
-    
-           <input type="text" id="fname" name="user_fname">
-        
-           <input type="text" id="lname" name="user_lmail">
-         
-           <textarea id="msg" name="user_message"></textarea>
-    </div>
-         
+        <div class="mb-3">
+            <span><label for="form" class="form-label"></label>
+            <input type="text" class="form-control" id="Nombre" placeholder="Nombre"></span>
+            <span><label for="form" class="form-label"></label>
+            <input type="text" class="form-control" id="Apellido" placeholder="Apellido"></span>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+          </div>
+    </div>        
 </form>
 
 <footer>
