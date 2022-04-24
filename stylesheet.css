@@ -1,7 +1,30 @@
 body{ 
 
 }
-.text-white {
+#navbar { 
+
+}
+#navleft {  float: right;
+
+}
+#bloque2 { margin-top: 0%;
+
+}
+
+#texto1 {
     text-align: right;
     padding: 400px 50px 50px 400px;
+}
+
+#charlaignite{
+    border-bottom:1px dotted #000000;
+}
+
+.nav-link{
+    text: white
+}
+
+#Footer { 
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

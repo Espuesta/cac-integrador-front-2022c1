@@ -10,19 +10,19 @@
 </head>
 <body>
 <menu>
-    <div class="container-fluid">
+    <div class="container" id="navbar">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <div class="container-fluid">
+                <div class="container">
                  <a class="navbar-brand" href="#"> 
                 <img src="img/codoacodo.png" alt="codoacodo" style="width:150px;"> 
                 Conf Bs As</a>
                 </div>
             </li>
-           
+            <div class="d-flex align-items-center" id="navleft">
             <li class="nav-item">
-                <a class="nav-link" href="#">La Conferencia</a>
+                <a class="nav-link" href="#" style="color:white">La Conferencia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Los Oradores</a>
@@ -36,16 +36,15 @@
               <li class="nav-item">
                 <a class="nav-link text-success" href="#">Comprar Tickets</a>
               </li>
-            
+            </div>
             </ul>
-
         </nav>
     </div>    
 </menu>
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid" id="bloque2">
         <div class="fondo-imagen" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/hawaii.jpg');height: 100vh;">
-          <div class="text-white">
+          <div class="text-white" id="texto1">
                       <h1>Conf Bs As</h1>
             <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos que <br> están creando el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te Esperamos!</p>
             <button name="button" class="btn btn-outline-light" href="#Orador">Quiero ser orador</button> <button name="button" class="btn btn-success">Quiero comprar tickets</button>
@@ -56,9 +55,12 @@
 
 <section>
     <div class="container-fluid" id="Orador">
-        <h5>Conocé a los</h5>
+      <div class="text-center">
+        <h5 class="fw-light">CONOCÉ A LXS</h5>
         <H1>ORADORES</H1>
-        <div class="card" style="width:400px">
+    </div>
+        <div class="card-group">
+        <div class="card col-md-4">
             <img class="card-img-top" src="img/steve.jpg" alt="SteveJobs">
             <div class="card-body">
                 <span class="badge bg-warning">JavaScript</span><span class="badge bg-info">React</span>
@@ -67,7 +69,7 @@
             </div>
           </div>
 
-          <div class="card" style="width:400px">
+          <div class="card col-md-4">
             <img class="card-img-top" src="img/bill.jpg" alt="BillGates">
             <div class="card-body">
                 <span class="badge bg-warning">JavaScript</span><span class="badge bg-info">React</span>
@@ -76,7 +78,7 @@
             </div>
           </div>
 
-          <div class="card" style="width:400px">
+          <div class="card col-md-4">
             <img class="card-img-top" src="img/ada.jpeg" alt="AdaLovelace">
             <div class="card-body">
                 <span class="badge bg-secondary">Negocios</span><span class="badge bg-danger">Startups</span>
@@ -84,21 +86,22 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi facere aspernatur accusamus adipisci perferendis ad dolores. Illum a obcaecati, aspernatur magnam vero necessitatibus, culpa quis voluptate et nobis fugiat!</p>
             </div>
           </div>
+        </div>
     </div>
 </section>
 
 <section>
     <div class="container-fluid">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
+        <div class="card bg-dark">
+          <div class="row">
+              <div class="col-md-6">
                 <img src="img/honolulu.jpg" class="img-fluid" alt="honolulu">
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
+              <div class="col-md-6">
+                <div class="card-body text-white text-left">
                   <h5 class="card-title">Bs As - Octubre</h5>
                   <p class="card-text">Buenos Aires es la provincia y la localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie)</p>
-                  <button name="button">Conocé más</button>
+                  <button name="button" class="btn btn-outline-light">Conocé más</button>
                 </div>
               </div>
             </div>
@@ -107,50 +110,48 @@
 </section>
 
 <form>
-    <div class="container-fluid">
-        <h5>Conviertete en</h5>
+    <div class="container-fluid text-center">
+        <p>CONVIÉRTETE EN UN</p>
         <H1>ORADOR</H1>
-        <h6>Anítate para dar una <span>charla ignite</span>. cuéntanos de qué quieres hablar</h6>
+        <h6>Anótate para dar una <span id="charlaignite">charla ignite</span>. cuéntanos de qué quieres hablar</h6>
         <div class="mb-3">
-            <span><label for="form" class="form-label"></label>
+            <span><label for="form" class="form-label col-md-3"></label>
             <input type="text" class="form-control" id="Nombre" placeholder="Nombre"></span>
-            <span><label for="form" class="form-label"></label>
+            <span><label for="form" class="form-label col-md-3"></label>
             <input type="text" class="form-control" id="Apellido" placeholder="Apellido"></span>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            <textarea class="form-control col-md-6" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
           </div>
     </div>        
 </form>
 
 <footer>
     <div class="container-fluid">
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" style="background-color: rgb(22, 56, 83);" id="Footer">
             <li class="nav-item">
-              <a class="nav-link" href="#">Preguntas Frecuentes</a>
+              <a class="nav-link" style="color: white;" href="#">Preguntas <br> frecuentes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contáctanos</a>
+              <a class="nav-link" style="color: white;" href="#">Contáctanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Prensa</a>
+              <a class="nav-link" style="color: white;" href="#">Prensa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Conferencias</a>
+                <a class="nav-link" style="color: white;" href="#" >Conferencias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Términos y condiciones</a>
+                <a class="nav-link" style="color: white;" href="#">Términos y <br>condiciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Privacidad</a>
+                <a class="nav-link" style="color: white;" href="#">Privacidad</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Estudiantes</a>
+                <a class="nav-link" style="color: white;" href="#">Estudiantes</a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+            </div>
           </ul>
     </div>
 </footer>
