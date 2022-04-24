@@ -1,6 +1,7 @@
 body{ 
 
 }
-.fondo-imagen{ background-image: url(../cac-integrador-front-2022c1-master/img/ba1.jpg);
-
+.text-white {
+    text-align: right;
+    padding: 400px 50px 50px 400px;
 }
