@@ -60,7 +60,7 @@
         <H1>ORADORES</H1>
     </div>
         <div class="card-group">
-        <div class="card col-md-4">
+        <div class="card col-md-4" id="cardpad">
             <img class="card-img-top" src="img/steve.jpg" alt="SteveJobs">
             <div class="card-body">
                 <span class="badge bg-warning">JavaScript</span><span class="badge bg-info">React</span>
@@ -69,7 +69,7 @@
             </div>
           </div>
 
-          <div class="card col-md-4">
+          <div class="card col-md-4" id="cardpad">
             <img class="card-img-top" src="img/bill.jpg" alt="BillGates">
             <div class="card-body">
                 <span class="badge bg-warning">JavaScript</span><span class="badge bg-info">React</span>
@@ -78,7 +78,7 @@
             </div>
           </div>
 
-          <div class="card col-md-4">
+          <div class="card col-md-4" id="cardpad">
             <img class="card-img-top" src="img/ada.jpeg" alt="AdaLovelace">
             <div class="card-body">
                 <span class="badge bg-secondary">Negocios</span><span class="badge bg-danger">Startups</span>
@@ -110,19 +110,27 @@
 </section>
 
 <form>
-    <div class="container-fluid text-center">
+    <div class="container-fluid" id="form">
+        <div class="text-center">
         <p>CONVIÉRTETE EN UN</p>
         <H1>ORADOR</H1>
         <h6>Anótate para dar una <span id="charlaignite">charla ignite</span>. cuéntanos de qué quieres hablar</h6>
-        <div class="mb-3">
-            <span><label for="form" class="form-label col-md-3"></label>
-            <input type="text" class="form-control" id="Nombre" placeholder="Nombre"></span>
-            <span><label for="form" class="form-label col-md-3"></label>
-            <input type="text" class="form-control" id="Apellido" placeholder="Apellido"></span>
-          </div>
-          <div class="mb-3">
+        </div>
+        <div class="row">
+            <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+        </div>
+            <div class="mb-6">
             <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control col-md-6" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            <textarea class="form-control col-12" id="exampleFormControlTextarea1" rows="6" placeholder="Sobre qué quieres hablar?"></textarea>
+            <p class="fw-light text-left">Recuerda incluir un título para tu charla</p>
+            </div>
+          <div class="d-grid gap-2">
+          <button class="btn btn-success" type="button">Enviar</button>
           </div>
     </div>        
 </form>
