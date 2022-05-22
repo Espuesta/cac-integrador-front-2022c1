@@ -45,3 +45,23 @@ form{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+#cards {
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 350px;
+    padding-right: 350px;
+
+}
+
+#text {
+    text-align: center;
+}
+
+#form {
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
